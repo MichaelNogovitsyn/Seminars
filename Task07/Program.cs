@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Программа, которая принимает на вход трехзначное число и 
+// на выходе показывает последнюю цифру
+// 456 - 6
+// 782-2
 Console.WriteLine("Hello, World!");
