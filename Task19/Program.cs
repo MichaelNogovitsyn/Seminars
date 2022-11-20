@@ -7,8 +7,6 @@
 */
 Console.WriteLine("Введите пятиначное число: ");
 int digit = Convert.ToInt32(Console.ReadLine());
-// Проверка пятизначного числа
-
 
 // функция находит количество цифр в числе(Int32).
 int LengthInt32(int n)
@@ -40,7 +38,7 @@ bool isPalindrom(int number)
     int mirrowedDigit = (10000 * digit5) + (1000 * digit4) + (100 * digit3) + (10 * digit2) + digit1;
     return number == mirrowedDigit ? true : false;
 }
-
+// Проверка пятизначного числа
 if (LengthInt32(digit)==5) Console.WriteLine(isPalindrom(digit) ? "Да" : "Нет");
 else Console.WriteLine("Введено некоректное число");
 
