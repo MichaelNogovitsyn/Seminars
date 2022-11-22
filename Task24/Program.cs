@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Выдает сумму чисел от 1 до А
+Console.WriteLine("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int SumDigits(int n)
+{
+    int sum = 0;
+    for (int i = 0; i <= n; i++)
+    {
+        sum = sum + i;
+    }
+    return sum;
+}
+Console.WriteLine(SumDigits(number));
