@@ -15,8 +15,8 @@ string RandomArray()
         array[i] = rnd.Next(0, 100);
         str = str + $"{array[i]},";
     }
-    int end = str.Length - 1;
-    str=str.Remove(end);
+    int end = str.Length - 1;  //конец строки
+    str=str.Remove(end); // удалим лишнюю запятую
     return str + "]";
 }
 Console.WriteLine(RandomArray());
