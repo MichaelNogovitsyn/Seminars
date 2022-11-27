@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// задайте одномерный массив из 123 случайных чисел. 
+//Найдите количество элементов массива, значения которрых лежат в отрезке [10,99]
 Console.WriteLine("Hello, World!");
