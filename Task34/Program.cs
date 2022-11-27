@@ -27,12 +27,11 @@ void PrintArray(int[] array)
 int countEvenDigit(int[] arr)
 {
     int countEvenDigit=default;
-    for (int i = 1; i < arr.Length; i+=2)
+    for (int i = 0; i < arr.Length; i++)
     {
-        countEvenDigit++;
+        if(arr[i]%2==0) countEvenDigit++;
     }
 return countEvenDigit;
-// А можно проще countEvenDigit=arr.Length/2;
 
 }
 int[] array = CreateArray(6,99,1000);
