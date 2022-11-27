@@ -2,7 +2,7 @@
 Парой считаем первый и последний элеменот, 
 воторой и предпоследний и.т.д. 
 Результат запишите в новом массиве. */
-
+// arr[i]=rnd.Double()*(max-min)+min;
 int[] CreateArray(int size, int min, int max)
 {
     int[] arr = new int[size];
