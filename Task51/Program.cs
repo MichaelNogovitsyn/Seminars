@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Задайте двумерный массив. 
+// Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0);(1;1)))
+
 Console.WriteLine("Hello, World!");
