@@ -44,7 +44,7 @@ void PrintMatrix(int[,] matrix)
 int ElementMatrix(int[,] matrix, int row, int column)
 {
     if (row < 0 || column < 0) return -1000;
-    else if (row <= matrix.GetLength(0) || column <= matrix.GetLength(1))
+    else if (row <= matrix.GetLength(0) -1|| column <= matrix.GetLength(1)-1)
         return matrix[row, column];
     else return -1000;
 }
