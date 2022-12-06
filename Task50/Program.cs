@@ -49,7 +49,7 @@ int ElementMatrix(int[,] matrix, int row, int column)
     else return -1000;
 }
 
-int[,] array = CreateMatrixRndInt(4, 4, 0, 100);
+int[,] array = CreateMatrixRndInt(4, 3, 0, 100);
 PrintMatrix(array);
 int element = ElementMatrix(array, rowMatrix, colMatrix);
 if (element != -1000)
