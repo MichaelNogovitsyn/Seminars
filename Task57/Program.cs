@@ -41,7 +41,7 @@ void PrintArray(int[] array)
     }
     Console.WriteLine("]");
 }
-int[] To1Darray(int[,] matrix)
+int[] MatrixToArray(int[,] matrix)
 {
     int[] array = new int[matrix.Length];
     int k = 0;
@@ -78,7 +78,7 @@ void CountValue(int[] arr)
 int[,] newMatrix = CreateMatrixRndInt(4, 4, 0, 10);
 PrintMatrix(newMatrix);
 System.Console.WriteLine();
-int[] array = To1Darray(newMatrix);
+int[] array = MatrixToArray(newMatrix);
 PrintArray(array);
 
 Array.Sort(array);
