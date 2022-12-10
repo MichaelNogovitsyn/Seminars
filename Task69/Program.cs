@@ -6,12 +6,13 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 
 int DegreeNumRec(int numA, int numB)
 {
-    if (numB>0) 
+    if (numB == 0) return 1;
+    if (numB > 1)
     {
-        return numA*DegreeNumRec(numB-1);
+        return numA * DegreeNumRec(numA, numB - 1);
     }
     return numA;
 }
 
-int degree=DegreeNumRec(numberA,numberB);
+int degree = DegreeNumRec(numberA, numberB);
 System.Console.WriteLine(degree);
