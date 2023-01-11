@@ -1,21 +1,27 @@
-﻿// Поиск максимума из 3х подряд чисел массива.
-int size=10;
-int m =3;
-int[] array = Enumerable.Range(1,size)
-                        .Select(item=> Random.Shared.Next(10))
+﻿
+// Поиск максимума из 3х подряд чисел массива.
+using System.Diagnostics;
+int size = 1000_000;
+int m = 1_0000;
+int[] array = Enumerable.Range(1, size)
+                        .Select(item => Random.Shared.Next(10))
                         .ToArray();
 
-System.Console.WriteLine($"[{string.Join(", ", array)}]");
+//System.Console.WriteLine($"[{string.Join(", ", array)}]");
 
-int max=0;
+Stopwatch sw = new();
+sw.Start();
 
-for (int i = 0; i < array.Length-m; i++)
+
+int max = 0;
+
+for (int j = 0; j < m; j++) max += array[j];
+int t = max;
+for (int i = 1; i < array.Length-m; i++)
 {
-    int t=0;
-    for (int j = i; j < i+m; j++)
-    {
-        t=t+array[j];
-    }
-    if (t>max) max=t;
+    t=t-array[i-1] + array[i+m-1];
+            if (t > max) max = t;
 }
+sw.Stop();
+System.Console.WriteLine($"time = {sw.ElapsedMilliseconds}");
 System.Console.WriteLine(max);
