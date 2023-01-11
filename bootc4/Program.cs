@@ -8,7 +8,7 @@ Print(array);
 SortSelection(array);
 Print(array); */
 
-10.CreateArray(min:10,max:50)
-.Print()
-.SortSelection()
-.Print();
+int[] ar=10.CreateArray(min:10,max:50)
+ar.Print()
+ar.SortSelection()
+ar.Print();
