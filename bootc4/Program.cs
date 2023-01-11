@@ -8,7 +8,14 @@ Print(array);
 SortSelection(array);
 Print(array); */
 
-int[] ar=10.CreateArray(min:10,max:50)
-ar.Print()
-ar.SortSelection()
+//1 var
+int[] ar=10.CreateArray(min:10,max:50);
 ar.Print();
+ar.SortSelection();
+ar.Print();
+
+//2 var
+10.CreateArray(min:10,max:50)
+.Print()
+.SortSelection()
+.Print();
