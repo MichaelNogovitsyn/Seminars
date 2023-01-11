@@ -3,7 +3,12 @@
 using static Sorting;
 using static Infrastracture;
 
-int[] array = CreateArray(10);
+/* int[] array = CreateArray(10);
 Print(array);
 SortSelection(array);
-Print(array);
+Print(array); */
+
+10.CreateArray(min:10,max:50)
+.Print()
+.SortSelection()
+.Print();
