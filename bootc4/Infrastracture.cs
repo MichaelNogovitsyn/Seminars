@@ -7,6 +7,7 @@ public static class Infrastracture
                     .Select(item => Random.Shared.Next(min, max))
                     .ToArray();
     }
+    
     public static int[] Print(this int[] array)
     {
         System.Console.WriteLine($"[{String.Join(',', array)}]");
